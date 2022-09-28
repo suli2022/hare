@@ -2,6 +2,7 @@
 Sallai András
 Szoft II N
 2022-09-21
+2022-09-28
 */
 
 const calcButton = document.querySelector('#calcButton');
