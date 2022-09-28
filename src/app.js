@@ -3,20 +3,17 @@ Sallai András
 Szoft II N
 2022-09-21
 */
-
 const calcButton = document.querySelector('#calcButton');
 const eredmeny = document.querySelector('#eredmeny');
-
 calcButton.addEventListener('click', () => {
-    const base = document.querySelector('#base') as HTMLInputElement;
-    const height = document.querySelector('#height') as HTMLInputElement;
-    let baseNum: number = Number(base.value);
-    let heightNum : number = Number(height.value);
+    const base = document.querySelector('#base');
+    const height = document.querySelector('#height');
+    let baseNum = Number(base.value);
+    let heightNum = Number(height.value);
     let area = calcArea(baseNum, heightNum);
     eredmeny.textContent = String(area);
     // alert(area);
 });
-
-function calcArea(base: number, height: number):number {
+function calcArea(base, height) {
     return base * height / 2;
 }
