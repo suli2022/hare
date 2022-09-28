@@ -13,7 +13,9 @@ calcButton.addEventListener('click', () => {
     let baseNum: number = Number(base.value);
     let heightNum : number = Number(height.value);
     let area = calcArea(baseNum, heightNum);
-    eredmeny.textContent = String(area);
+    eredmeny.textContent = "Terület: " + String(area);
+    base.value = "";
+    height.value = "";
     // alert(area);
 });
 
